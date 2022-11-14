@@ -1,0 +1,51 @@
+/*-------------- OUR TEAM---------------*/
+.section__our-team {
+background-color: var(--bg-team-color);
+}
+
+.our-team {
+display: flex;
+}
+
+.our-team__card {
+flex-direction: column;
+background-color: var(--bg-taam-card-color);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+width: calc((100% - (3*var(--space-card))) / 4);
+
+margin-left: var(--space-card);
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+/*-------- Images--------*/
+.our-team__imag {
+    width: 100%;
+    display: block;
+}
+
+.our-team__container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 30px 0;
+}
+
+.our-team__name {
+@include font-medium(16px, 1.187, 0.03em);
+text-align: center;
+color: var(--team-name-color);
+
+margin: 0 0 10px;
+}
+
+.our-team__description {
+@include font-normal(16px, 1.187, 0.03em);
+text-align: center;
+color: var(--team-dsk-color);
+
+margin: 0;
+}

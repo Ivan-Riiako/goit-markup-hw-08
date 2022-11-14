@@ -1,0 +1,46 @@
+/*   ------------Our feature ------------- */
+.section__features {
+    padding-bottom: 0;
+}
+
+.features {
+    display: flex;
+}
+/* feature  card*/
+.feature__card {
+width: calc((100% - (2*var(--space-card))) / 4);
+
+    margin-left: var(--space-card);
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.feature__card-wrapper {
+    @include aligm( flex,center ,center );
+    height: 120px;
+
+    margin-bottom: 30px;
+
+    border-radius: 4px;
+    background-color: var(--bg-feature-color);
+}
+
+.feature__card-heading {
+    
+    @include font-bold(14px, 1.14, 0.03em);
+
+    text-transform: uppercase;
+    color: var(--feature-list-h);
+    
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.feature__card-description {
+    @include font-normal(14px, 1.7, 0.03em);
+    color: var(--feature-dsk);
+    
+    margin: 0px;
+}

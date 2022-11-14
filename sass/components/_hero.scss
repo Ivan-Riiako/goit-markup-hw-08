@@ -1,0 +1,41 @@
+.hero-section {
+padding: 200px 0;
+max-width: 1600px;
+
+
+
+text-align: center;
+
+background-size: 1600px auto;
+background-color: #AFB1B8;
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon-min.jpg);
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.hero-section__heading {
+    
+font-style: normal;
+        
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--h-hero-color);
+
+width: 696px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+}
+
+.hero-section__button {
+@extend %button;
+
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 32px;
+padding-right: 32px;
+
+}
