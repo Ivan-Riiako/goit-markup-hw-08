@@ -14,8 +14,10 @@
 .feature__card {
 @media screen and (max-width: 768px){
 min-width: 450px;
+margin-left: auto;
+margin-right: auto;
 }
-@media screen and (min-width: 768px)   {
+@media screen and (min-width: 767px)   {
         width: calc((100% - var(--space-card)) / 2);
         margin-left: var(--space-card);
           
