@@ -10,7 +10,7 @@
 
 .navigation__list {
     display: flex;
-
+margin-left: 93px;
     &>.navigation__li {
         margin-left: 50px;
     }
@@ -21,6 +21,9 @@
 }
 
 .navigation__element {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     @include font-medium(14px, 1.14, 0.02em);
     color: var(--nav-color);
 
@@ -34,8 +37,6 @@
 
 // ======== Current ========//
 .navigation__current {
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: var(--link-active);
     position: relative;
 
@@ -54,26 +55,29 @@
 
 /* --------------CONTACTS --------------*/
 .contacts {
-    display: flex;
-    margin-left: auto;
+margin-left: auto;
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+    
 }
-
+}
 .contacts__li {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    &:not(:last-child){
+    margin-bottom: 10px;
+    }
+    }
+    @media screen and (min-width: 1200px) {
     display: flex;
-
     margin-left: 50px;
-
     &:first-child {
         margin-left: 0;
     }
 }
+}
 
 .contacts__contact {
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    @include aligm(flex, center, center);
-
     @include font-medium(14px, 1.14, 0.02em);
     text-decoration: none;
     color: var(--contacts-color);
@@ -86,10 +90,28 @@
         color: var(--link-active);
         fill: var(--link-active);
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: block;
+    &+&{
+    margin-bottom: 10px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+    @include aligm(flex, center, center);
+        }
 }
 
 .contacts__icon-maill,
 .contacts__icon-tell {
     fill: inherit;
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        margin-right: 8px;
+        }
+    @media screen and (min-width: 1200px){
     margin-right: 10px;
+    }
+ 
 }
