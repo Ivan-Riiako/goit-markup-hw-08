@@ -399,24 +399,35 @@ summary {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    min-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
-@media screen and (max-width: 1199px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
+
 .title {
   font-family: "Roboto";
   font-weight: 700;
@@ -1118,8 +1129,6 @@ a {
 }
 
 .hero-section {
-  padding: 200px 0;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -1129,6 +1138,20 @@ a {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-fon-min.jpg);
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (max-width: 1200px) {
+  .hero-section {
+    max-width: 1200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-section__heading {
