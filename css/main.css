@@ -1269,6 +1269,12 @@ a {
   margin: 0px;
 }
 
+@media screen and (max-width: 1200px) {
+  .mobile-display-none {
+    display: none;
+  }
+}
+
 .our-work {
   display: -webkit-box;
   display: -ms-flexbox;
