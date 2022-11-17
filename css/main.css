@@ -394,12 +394,14 @@ summary {
 }
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (max-width: 767px) {
   .container {
-    min-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -409,8 +411,6 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    margin-left: auto;
-    margin-right: auto;
     width: 1200px;
   }
 }
@@ -418,8 +418,6 @@ summary {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -1353,6 +1351,9 @@ a {
   background-color: var(--bg-team-color);
 }
 
+.our-team {
+  margin: -15px;
+}
 @media screen and (min-width: 768px) {
   .our-team {
     display: -webkit-box;
@@ -1360,7 +1361,6 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -15px;
   }
 }
 

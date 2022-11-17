@@ -4,10 +4,10 @@ background-color: var(--bg-team-color);
 }
 
 .our-team {
+margin: -15px;
     @media screen and (min-width: 768px) {
 display: flex;
 flex-wrap: wrap;
-margin: -15px;
 }
 }
 
