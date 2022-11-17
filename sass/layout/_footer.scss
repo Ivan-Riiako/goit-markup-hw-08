@@ -108,7 +108,8 @@ width: 570px;
 }
 
 .footer-subscription__field {
-    width: 450px;
+   min-width: 300px;
+   max-width: 450px;
 margin-bottom: 20px;
 
 @media screen and (min-width: 1200px){
