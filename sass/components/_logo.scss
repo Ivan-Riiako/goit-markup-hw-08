@@ -2,8 +2,9 @@
     font-family: 'Raleway';
     @include font-bold(26px, 1.19, 0.03em);
     color: var(--logo-color);
-
+@media screen and (min-width: 1200px) {
     margin-right: auto;
+}
 }
 
 .logo__studio {

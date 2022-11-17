@@ -1,16 +1,26 @@
 .footer {
 background-color: var(--bg-footer-color);
 padding: 60px 0px;
+
     &>.container {
+    
+
+    @media screen and (min-width: 1200px){
         display: flex;
-        align-items: baseline;
+    align-items: baseline;
+        }
+        
     }
 }
 
 .footer-addres {
+text-align: center;
+@media screen and (min-width: 1200px) {
 display: flex;
-flex-direction: column;
-min-width:max-content;
+    flex-direction: column;
+    min-width: max-content;
+    text-align: start;
+}
 }
 
 .footer-addres__item {
@@ -49,9 +59,11 @@ color: var(--adress-contact-color);
 // ===Social links=== //
 .footer-social {
     // margin-left: 70px;
-    
+    text-align: center;
+    @media screen and (min-width: 1200px) {
     margin-left: 93px;
-    
+    text-align: start;
+    }
 }
 
 .footer-social__title {
@@ -66,12 +78,16 @@ color: var(--adress-contact-color);
  /* Subscription */
 .footer-subscription {
 width: 100%;
+    @media screen and (min-width: 1200px) {
 margin-left: 93px;
 margin-right: 0;
+    }
 }
 
 .footer-subscription__container {
+    @media screen and (min-width: 1200px) {
 display: flex;
+    }
 }
 
 .footer-subscription__field {
