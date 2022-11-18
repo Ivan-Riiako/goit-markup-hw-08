@@ -622,6 +622,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .footer-subscription__container {
@@ -635,8 +636,7 @@ a {
 }
 
 .footer-subscription__field {
-  min-width: 300px;
-  max-width: 450px;
+  width: 100%;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2F303A;

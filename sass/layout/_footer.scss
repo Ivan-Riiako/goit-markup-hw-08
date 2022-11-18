@@ -99,6 +99,7 @@ color: var(--adress-contact-color);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
     @media screen and (min-width: 1200px) {
 flex-direction: row;
@@ -108,8 +109,8 @@ width: 570px;
 }
 
 .footer-subscription__field {
-   min-width: 300px;
-   max-width: 450px;
+width: 100% ;
+  
 margin-bottom: 20px;
 
 @media screen and (min-width: 1200px){
