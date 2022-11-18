@@ -355,7 +355,7 @@ summary {
   src: local(""), url("../fonts/roboto-v30-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v30-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v30-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v30-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v30-latin_cyrillic-900.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
-.hidden {
+.visually-hidden {
   color: rgba(0, 0, 0, 0);
   position: absolute;
   width: 1px;
@@ -459,11 +459,6 @@ h5,
 h6,
 p,
 ul {
-  margin: 0;
-  padding: 0;
-}
-
-.list {
   margin: 0;
   padding: 0;
   list-style-type: none;
