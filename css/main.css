@@ -472,14 +472,20 @@ a {
   border-bottom: 1px solid var(--nav-line);
 }
 
-.container__head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
+@media screen and (max-width: 767px) {
+  .container__head {
+    position: relative;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 /* --------------NAVIGATION  --------------*/
@@ -490,23 +496,26 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  min-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    max-width: 480px;
+  }
 }
 .btn-mobile-menu {
+  display: inline-block;
   position: relative;
-  margin-left: auto;
+  width: 40px;
+  height: 40px;
   outline: auto;
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: transparent;
   border: none;
-  width: 40px;
-  height: 40px;
 }
-@media screen and (min-width: 768px) {
-  .btn-mobile-menu {
-    display: none;
-  }
+.btn-mobile-menu .btn-mobile-menu__icon-menu-close {
+  display: none;
 }
 .btn-mobile-menu__icons {
   position: absolute;
@@ -518,8 +527,13 @@ a {
 .btn-mobile-menu:hover, .btn-mobile-menu:focus {
   fill: var(--link-active);
 }
+@media screen and (min-width: 768px) {
+  .btn-mobile-menu {
+    display: none;
+  }
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navigation__list {
     position: absolute;
   }
@@ -540,6 +554,7 @@ a {
 }
 
 .navigation__element {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -550,7 +565,6 @@ a {
 }
 @media screen and (min-width: 768px) {
   .navigation__element {
-    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -562,9 +576,9 @@ a {
 .navigation__current {
   color: var(--link-active);
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .navigation__current {
-    position: relative;
+    position: absolute;
   }
   .navigation__current::after {
     content: "";
@@ -580,7 +594,7 @@ a {
 }
 
 /* --------------CONTACTS --------------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts {
     position: absolute;
   }

@@ -3,38 +3,50 @@ border-bottom: 1px solid var(--nav-line);
 }
 
 .container__head {
-display: flex;
-align-items: center;
-position: relative;
-}
+    @media screen and (max-width: 767px) {
+        position: relative;
+    }
 
+@media screen and (min-width: 768px) {
+    display: flex;
+     align-items: center;
+}
+}
 /* --------------NAVIGATION  --------------*/
 .navigation {
+   
+    
     display: flex;
     align-items: center;
-
-    position: relative;
-
-    @media screen and (min-width: 768px) {}
+    min-width: 100%;
+@media screen and (max-width: 768px){
+    max-width: 480px;
+}
+    @media screen and (min-width: 768px) {
+        
+    }
 
 }
 
 //  menu
 .btn-mobile-menu {
+    display: inline-block;
     position: relative;
-    margin-left: auto;
+    
+    width: 40px;
+    height: 40px;
 
     outline: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    // margin-left: auto;
+    
+    
     background-color: transparent;
     border: none;
 
-    width: 40px;
-    height: 40px;
-
-    @media screen and (min-width:768px) {
-        display: none;
+    & .btn-mobile-menu__icon-menu-close{
+    display: none;
     }
 
     &__icons {
@@ -49,11 +61,14 @@ position: relative;
         fill: var(--link-active);
     }
 
+    @media screen and (min-width:768px) {
+    display: none;
+       }
 }
 
 // AND menu
 .navigation__list {
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 767px) {
         position: absolute;
     }
 
@@ -74,8 +89,9 @@ position: relative;
 }
 
 .navigation__element {
+    display: block;
     @media screen and (min-width: 768px) {
-        display: block;
+       
         padding-top: 32px;
         padding-bottom: 32px;
     }
@@ -95,8 +111,9 @@ position: relative;
 .navigation__current {
     color: var(--link-active);
 
-    @media screen and (min-width: 768px) {
-        position: relative;
+@media screen and (max-width: 767px) {
+        position: absolute;
+    
 
         &::after {
             content: "";
@@ -115,7 +132,7 @@ position: relative;
 
 /* --------------CONTACTS --------------*/
 .contacts {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         position: absolute;
     }
 

@@ -22,9 +22,12 @@
           >
           <div>
           <button type="button" class="btn-mobile-menu">
-            <svg class="btn-mobile-menu__icons" width="40" height="40">
-                <use href="./images/icons.svg#icon-menu"></use>
-                <use href="./images/icons.svg#icon-menu-close"></use>
+            <svg class="btn-mobile-menu__icons"
+              width="40"
+              height="40"
+              aria-label="переключатель мобильного меню">
+                <use class="btn-mobile-menu__icon-menu" href="./images/icons.svg#icon-menu"></use>
+                <use class="btn-mobile-menu__icon-menu-close" href="./images/icons.svg#icon-menu-close"></use>
               </svg>
             </button>
             </div>
@@ -457,7 +460,7 @@
               type="checkbox"
               name="newsletter"
               value="l"
-              class="imput-checkbox hidden"
+              class="imput-checkbox visually-hidden"
             />
             
             <label for="newsletter" class="label-checkbox"
