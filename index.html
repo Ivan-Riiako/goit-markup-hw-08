@@ -17,21 +17,18 @@
         <!-- navigation -->
         <nav class="navigation">
           <!-- LOGO -->
-          <a href="./index.html" class="logo" lang="en"
-            >Web<span class="logo__studio">Studio</span></a
-          >
-          <div>
-          <button type="button" class="btn-mobile-menu">
+          <a href="./index.html" class="logo" lang="en">Web<span class="logo__studio">Studio</span></a>
+          <button type="button" class="btn-mobile-menu" aria-controls="menu-conteiner"  aria-expanded="false"  data-menu-button >
             <svg class="btn-mobile-menu__icons"
               width="40"
               height="40"
-              aria-label="переключатель мобильного меню">
+              aria-label="переключатель мобильного меню"
+             >
                 <use class="btn-mobile-menu__icon-menu" href="./images/icons.svg#icon-menu"></use>
                 <use class="btn-mobile-menu__icon-menu-close" href="./images/icons.svg#icon-menu-close"></use>
               </svg>
             </button>
-            </div>
-          <ul class="navigation__list list">
+          <ul class="navigation__list  list" id="menu-conteiner" data-menu>
             <li class="navigation__li"><a href="./index.html" class="navigation__current navigation__element">Студія</a></li>
             <li class="navigation__li"><a href="./portfolio.html" class="navigation__element">Портфоліо</a></li>
             <li class="navigation__li"><a href="#" class="navigation__element">Контакти</a></li>
