@@ -3,28 +3,30 @@ border-bottom: 1px solid var(--nav-line);
 }
 
 .container__head {
-    position: relative;
-    
-    @media screen and (max-width: 767px) {
-     
-    }
 
-@media screen and (min-width: 768px) {
-    display: flex;
-     align-items: center;
-}
+
+//     position: relative;
+    
+//     @media screen and (max-width: 767px) {
+     
+//     }
+
+// @media screen and (min-width: 768px) {
+//     display: flex;
+//      align-items: center;
+// }
 }
 /* --------------NAVIGATION  --------------*/
 .navigation {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     
-    @media screen and (max-width: 768px){
-    width: 100%;
-    }
-    @media screen and (min-width: 768px) {
+    // @media screen and (max-width: 768px){
+    // width: 100%;
+    // }
+    // @media screen and (min-width: 768px) {
         
-    }
+    // }
 
 }
 
@@ -78,43 +80,43 @@ border-bottom: 1px solid var(--nav-line);
 
 // AND menu
 .navigation__list {
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+    // @media screen and (max-width: 767px) {
+    //     display: none;
+    // }
     
 
-      &.is-open{
-@media screen and (max-width: 767px) {
-    display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: azure;
+//       &.is-open{
+// @media screen and (max-width: 767px) {
+//     display: block;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background-color: azure;
 
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 48px;
-        padding-bottom: 40px;
+//         padding-left: 40px;
+//         padding-right: 40px;
+//         padding-top: 48px;
+//         padding-bottom: 40px;
 
        
-}
+// }
 
-    }
+    // }
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        margin-left: 93px;
+    // @media screen and (min-width: 768px) {
+    //     display: flex;
+    //     margin-left: 93px;
 
-        &>.navigation__li {
-            margin-left: 50px;
-        }
+    //     &>.navigation__li {
+    //         margin-left: 50px;
+    //     }
 
-        &>.navigation__li:first-child {
-            margin-left: 0;
-        }
-    }
+    //     &>.navigation__li:first-child {
+    //         margin-left: 0;
+    //     }
+    // }
 }
 
 .navigation__element {
@@ -167,59 +169,11 @@ border-bottom: 1px solid var(--nav-line);
 
 /* --------------CONTACTS --------------*/
 .contacts {
-@media screen and (max-width: 767px) {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 48px;
-    padding-bottom: 40px;
-        
 
-        
-display: flex;
-flex-direction: column-reverse;
-
-    }
-    @media screen and (min-width: 768px) {
-        margin-left: auto;
-    }
-
-    @media screen and (min-width: 1200px) {
-        display: flex;
-    }
 }
 
  .contacts__li {
-&+& {
-        @media screen and (max-width: 767px) {
-            font-weight: 500;
-            font-size: 34px;
-            line-height: 40px;
-            /* identical to box height */
 
-            letter-spacing: 0.02em;
-
-            color: #2196F3;
-        }
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
-    }
-
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        margin-left: 50px;
-
-        &:first-child {
-            margin-left: 0;
-        }
-    }
 }
 
 .contacts__contact {
@@ -240,30 +194,30 @@ text-decoration: none;
     &:focus {
         color: var(--link-active);
         fill: var(--link-active);
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-        display: block;
-
-        &+& {
-            margin-bottom: 10px;
         }
-    }
 
-    @media screen and (min-width: 1200px) {
-        @include aligm(flex, center, center);
-    }
+    // @media screen and (min-width: 768px) and (max-width: 1200px) {
+    //     display: block;
+
+    //     &+& {
+    //         margin-bottom: 10px;
+    //     }
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //     @include aligm(flex, center, center);
+    // }
 }
 
 .contacts__icon-maill,
 .contacts__icon-tell {
     fill: inherit;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 768px) {
         margin-right: 8px;
     }
 
