@@ -451,6 +451,10 @@ body {
   background-size: 100%;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -522,6 +526,7 @@ a {
 }
 
 .btn-mobile-menu {
+  z-index: 999;
   position: relative;
   margin-left: auto;
   margin-bottom: 10px;
