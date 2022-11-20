@@ -470,7 +470,6 @@ a {
 
 .header {
   position: relative;
-  outline: 2px dashed green;
 }
 
 .head-border {
@@ -478,16 +477,25 @@ a {
 }
 
 /* --------------NAVIGATION  --------------*/
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .menu-container {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100vh;
   overflow-y: scroll;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 48px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -496,14 +504,11 @@ a {
 .menu-container.is-open {
   display: block;
 }
-.navigation {
-  outline: 2px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 480px) {
+  .menu-container.is-open {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .btn-mobile-menu {
@@ -513,7 +518,6 @@ a {
   margin-top: 10px;
   width: 40px;
   height: 40px;
-  outline: auto;
   background-color: transparent;
   border: none;
 }
@@ -590,7 +594,7 @@ a {
 
 /* --------------CONTACTS --------------*/
 .contacts {
-  outline: auto;
+  margin-top: auto;
 }
 .contacts__contact-tell {
   font-weight: 500;
@@ -609,7 +613,7 @@ a {
 }
 
 .contacts__li {
-  outline: auto;
+  margin-bottom: 32px;
 }
 
 .contacts__contact-maill {
@@ -640,10 +644,15 @@ a {
 }
 
 .menu-container__social-links-list {
-  margin-top: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .menu-container__social-link-item {

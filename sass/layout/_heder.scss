@@ -1,6 +1,5 @@
 .header{
     position: relative;
-    outline: 2px dashed green  ;
 }
 
 .head-border {
@@ -8,44 +7,38 @@ border-bottom: 1px solid var(--nav-line);
 }
 
 /* --------------NAVIGATION  --------------*/
-.menu-container{
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+//  menu
+.menu-container {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100vh;
     overflow-y: scroll;
 
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 48px;
 
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    &.is-open{
-    
-    display: block;
-    @media screen and (max-width: 767px) {
+
+    &.is-open {
+
+        display: block;
+
+        @media screen and (min-width: 480px) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
     }
 }
-}
-.navigation {
-    outline: 2px solid white;
-    display: flex;
-    align-items: center;
-    
-    
-    // @media screen and (max-width: 768px){
-    // width: 100%;
-    // }
-    // @media screen and (min-width: 768px) {
-        
-    // }
-
-}
-
-//  menu
 .btn-mobile-menu {
     position: relative;
     margin-left: auto;
@@ -54,14 +47,9 @@ border-bottom: 1px solid var(--nav-line);
     
     width: 40px;
     height: 40px;
-
-    outline: auto;
-
-    
     
     background-color: transparent;
     border: none;
-
 
     &.is-open &__icon-menu-close{
         display: block;
@@ -168,7 +156,9 @@ border-bottom: 1px solid var(--nav-line);
 
 /* --------------CONTACTS --------------*/
 .contacts {
-outline: auto;
+    margin-top: auto;
+
+
 &__contact-tell {
     font-weight: 500;
         font-size: 34px;
@@ -190,7 +180,8 @@ font-weight: 500;
 }
 
  .contacts__li {
-outline: auto;
+
+margin-bottom: 32px;
 }
 
 .contacts__contact-maill {
@@ -244,8 +235,11 @@ text-decoration: none;
 }
 
 .menu-container__social-links-list{
-    margin-top: 64px;
     display: flex;
+    flex-wrap: wrap;
+margin-top: auto;
+    align-items: flex-end;
+    
 }
 .menu-container__social-link-item{
     position: relative;
