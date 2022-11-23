@@ -157,30 +157,27 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="our-work list">
             <li class="our-work__card">
-              <img
-                srcset="./images/desktop.jpg 1x, ./images/desktop@2x.jpg 2x"
-                src="./images/desktop.jpg"
-                alt="людина працює за пк"
-                class="our-work__img"
-              />
+              <picture class="our-work__img">
+                <source srcset="./images/desktop.webp 1x, ./images/desktop@2x.webp 2x"type="image/webp"/>
+                <source srcset="./images/desktop.jpg 1x, ./images/desktop@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/desktop.jpg" alt="людина працює за пк" />
+              </picture>
               <p class="our-work__descriptions">Десктопні додатки</p>
             </li>
             <li class="our-work__card">
-              <img
-                srcset="./images/laptop.jpg 1x, ./images/laptop@2x.jpg 2x"
-                src="./images/laptop.jpg"
-                alt="людина працює за ноутбуком"
-                class="our-work__img"
-              />
+               <picture class="our-work__img">
+                <source srcset="./images/laptop.webp 1x, ./images/laptop@2x.webp 2x"type="image/webp"/>
+                <source srcset="./images/laptop.jpg 1x, ./images/laptop@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/laptop.jpg" alt="людина працює за ноутбуком" />
+              </picture>
               <p class="our-work__descriptions">Мобільні додатки</p>
             </li>
             <li class="our-work__card">
-              <img
-                srcset="./images/table.jpg 1x, ./images/table@2x.jpg 2x"
-                src="./images/table.jpg"
-                alt="людина працює за планшетом"
-                class="our-work__img"
-              />
+               <picture class="our-work__img">
+                <source srcset="./images/table.webp 1x, ./images/table@2x.webp 2x"type="image/webp"/>
+                <source srcset="./images/table.jpg 1x, ./images/table@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/table.jpg" alt="людина працює за планшетом" />
+              </picture>
               <p class="our-work__descriptions">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -192,7 +189,11 @@
           <h2 class="title">Наша команда</h2>
           <ul class="our-team list">
             <li class="our-team__card">
-              <img src="./images/slaveone.jpg" alt="Ігор Дем'яненко" class="our-team__imag" />
+              <picture class="our-team__imag">
+                <source srcset="./images/slaveone270x260.webp 1x, ./images/slaveone270x260@x2.webp 2x" type="image/webp"/>
+                <source srcset="./images/slaveone270x260.jpg 1x, ./images/slaveone270x260@x2.jpg 2x" type="image/jpeg"/>
+                <img src="./images/slaveone270x260.jpg" alt="Ігор Дем'яненко" />
+              </picture>
               <div class="our-team__container">
                 <h3 class="our-team__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="our-team__description">Product Designer</p>
