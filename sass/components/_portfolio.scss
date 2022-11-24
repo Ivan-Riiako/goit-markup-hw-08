@@ -118,7 +118,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
     padding-top: 63px;
     padding-bottom: 63px;
 
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
     @include font-normal(18px, 1.56, 0.03em);
@@ -128,7 +128,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
     .project-card__link-card:hover &,
     .project-card__link-card:focus & 
         {
-        bottom: 0;
         transform: translateY(0%);
         }
 }
