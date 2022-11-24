@@ -113,9 +113,7 @@ width: 100% ;
   
 margin-bottom: 20px;
 
-@media screen and (min-width: 1200px){
-margin-bottom: 0;
-}
+
 
 border: 1px solid rgba(255, 255, 255, 0.3);
 background-color: #2F303A;
@@ -133,6 +131,10 @@ padding-right: 16px;
     &::placeholder {
     @include font-normal(16px, 1.25, 0.03em);
     color: rgba(255, 255, 255, 0.6);
+        }
+        
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
         }
  }
 

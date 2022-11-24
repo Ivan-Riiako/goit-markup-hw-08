@@ -872,11 +872,6 @@ a {
   padding-left: 16px;
   padding-right: 16px;
 }
-@media screen and (min-width: 1200px) {
-  .footer-subscription__field {
-    margin-bottom: 0;
-  }
-}
 .footer-subscription__field::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -911,6 +906,11 @@ a {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscription__field {
+    margin-bottom: 0;
+  }
 }
 
 .footer-subscription__submit {
@@ -1267,6 +1267,7 @@ a {
 }
 
 .logo--footer {
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -1347,6 +1348,9 @@ a {
   }
 }
 
+.project-list__project-card {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .project-list__project-card {
     margin: 15px;
@@ -1398,8 +1402,8 @@ a {
   height: 100%;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 63px;
-  padding-bottom: 63px;
+  padding-top: 77px;
+  padding-bottom: 77px;
   -webkit-transform: translateY(101%);
           transform: translateY(101%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -1412,6 +1416,22 @@ a {
   letter-spacing: 0.03em;
   color: #FFFFFF;
   background-color: rgba(33, 150, 243, 0.9);
+}
+@media screen and (min-width: 768px) {
+  .project-card__hover-transform {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 49px;
+    padding-bottom: 77px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-card__hover-transform {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
 }
 .project-card__link-card:hover .project-card__hover-transform, .project-card__link-card:focus .project-card__hover-transform {
   -webkit-transform: translateY(0%);
