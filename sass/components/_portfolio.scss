@@ -27,7 +27,7 @@
     padding-left: 22px;
     padding-right: 22px;  
 
-@include font-medium(16px, 1.62, 0.03em);
+@include font-medium(16px, 26px, 0.03em);
 text-align: center;
 color: var(--project-btn-text);
 
@@ -160,12 +160,12 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
 }
 
 .project-card__title {
-    // @include font-bold(18px, 1.88, 0.06em);
+    @include font-bold(18px, 36px, 0.06em);
     color: var(--project-card-h);
     margin-bottom: 4px;
 }
 
 .project-card__descriotion {
-    @include font-normal(16px, 1.88, 0.03em);
+    @include font-normal(16px, 30px, 0.03em);
     color: var(--project-card-dsk);
 }
