@@ -1,12 +1,14 @@
 .footer {
 background-color: var(--bg-footer-color);
-padding: 60px 0px;
-
-    &>.container {
+padding-top: 60px;
+padding-bottom: 60px;
+    &__container {
     
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 768px){
         display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     align-items: baseline;
         }
         
@@ -16,7 +18,7 @@ padding: 60px 0px;
 .footer-addres {
 text-align: center;
 margin-bottom: 60px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
     min-width: max-content;
     text-align: start;
     margin-bottom: 0;
@@ -33,7 +35,7 @@ height: 21px;
 
 .footer-addres__place {
 font-style: normal;
-@include font-normal(14px, 1.71, 0.03em);
+@include font-normal(14px, 24px, 0.03em);
 color: var(--adress-place-color);
 
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -46,7 +48,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .footer-addres__contact {
 font-style: normal;
-@include font-normal(14px, 1.71, 0.03em);
+@include font-normal(14px, 24px, 0.03em);
 color: var(--adress-contact-color);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,12 +65,15 @@ color: var(--adress-contact-color);
     flex-direction: column;
     margin-bottom: 60px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
+    
     align-items: flex-start;
+    }
+
+    @media screen and (min-width: 1200px) { 
     margin-left: 93px;
     margin-right: 93px;
     margin-bottom: 0;
-    text-align: start;
     }
 }
 
@@ -76,7 +81,7 @@ color: var(--adress-contact-color);
     display: inline-block;
     margin-bottom: 20px;
 
-    @include font-bold(14px, 1.14, 0.03em);
+    @include font-bold(14px, 16px, 0.03em);
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -88,12 +93,19 @@ color: var(--adress-contact-color);
         align-items: center;
         flex-direction: column;
 
-    @media screen and (min-width: 1200px) {
-        align-items: flex-start;
-
+    @media screen and (min-width: 768px) {
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        
     }
+        @media screen and (min-width: 1200px) {
+            margin: 0;
+            width: auto;
+            align-items: flex-start;
 }
-
+}
 .footer-subscription__container {
     display: flex;
     flex-direction: column;
@@ -129,7 +141,7 @@ padding-left: 16px;
 padding-right: 16px;
 
     &::placeholder {
-    @include font-normal(16px, 1.25, 0.03em);
+    @include font-normal(16px, 30px, 0.03em);
     color: rgba(255, 255, 255, 0.6);
         }
         
@@ -142,7 +154,7 @@ padding-right: 16px;
     @include aligm(flex, center, center);
      margin-left: 12px;
      
-     @include font-bold(16px, 1.87, 0.06em);   
+    //  @include font-bold(16px, 1.87, 0.06em);   
      text-align: center;
      color: #FFFFFF;
 
