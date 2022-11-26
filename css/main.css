@@ -536,7 +536,7 @@ a {
 }
 
 .btn-mobile-menu {
-  z-index: 100;
+  z-index: 10;
   position: relative;
   margin-left: auto;
   margin-bottom: 10px;
@@ -970,6 +970,7 @@ a {
 }
 
 .backdrop {
+  z-index: 11;
   position: fixed;
   top: 0;
   left: 0;
@@ -987,13 +988,12 @@ a {
 }
 
 .modal {
-  z-index: 101;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 528px;
+  width: calc(100vw - 30px);
   padding: 40px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1003,6 +1003,16 @@ a {
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;
   transition: transform 250ms linear, -webkit-transform 250ms linear;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 .backdrop.is-hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(1.15);
@@ -1058,7 +1068,7 @@ a {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16/12px;
+  line-height: 14px/12px;
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -1121,38 +1131,70 @@ a {
 }
 .textarea::-webkit-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16/12px;
+  font-size: 14px;
+  line-height: 16px/14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .textarea::-moz-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16/12px;
+  font-size: 14px;
+  line-height: 16px/14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .textarea:-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16/12px;
+  font-size: 14px;
+  line-height: 16px/14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .textarea::-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16/12px;
+  font-size: 14px;
+  line-height: 16px/14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .textarea::placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16/12px;
+  font-size: 14px;
+  line-height: 16px/14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (min-width: 1200px) {
+  .textarea::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px/12px;
+    letter-spacing: 0.01em;
+  }
+  .textarea::-moz-placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px/12px;
+    letter-spacing: 0.01em;
+  }
+  .textarea:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px/12px;
+    letter-spacing: 0.01em;
+  }
+  .textarea::-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px/12px;
+    letter-spacing: 0.01em;
+  }
+  .textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px/12px;
+    letter-spacing: 0.01em;
+  }
 }
 
 .checkbox {
@@ -1175,10 +1217,18 @@ a {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5/14px;
+  font-size: 12px;
+  line-height: 14px/12px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .label-checkbox {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px/14px;
+    letter-spacing: 0.03em;
+  }
 }
 .label-checkbox::before {
   content: "";
@@ -1203,10 +1253,6 @@ a {
   border: 2px solid var(--link-active);
 }
 .label-checkbox > a {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5/14px;
-  letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196F3;
