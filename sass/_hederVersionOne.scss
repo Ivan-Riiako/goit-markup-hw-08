@@ -3,9 +3,11 @@
 }
 
 .container__head {
-    position: relative;
+   
 
-    @media screen and (max-width: 767px) {}
+    @media screen and (max-width: 767px) {
+        position: relative;
+    }
 
     @media screen and (min-width: 768px) {
         display: flex;
