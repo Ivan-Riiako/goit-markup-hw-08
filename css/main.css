@@ -974,6 +974,8 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
@@ -995,6 +997,7 @@ a {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   width: calc(100vw - 30px);
+  max-height: calc(100vh - 30px);
   padding: 40px;
   overflow-y: scroll;
   background-color: #FFFFFF;
