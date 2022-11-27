@@ -500,6 +500,9 @@ a {
           align-items: center;
 }
 
+.menu-container {
+  z-index: 10;
+}
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -523,8 +526,14 @@ a {
     background: #FFFFFF;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
   .menu-container.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: painted;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -549,7 +558,7 @@ a {
 }
 
 .btn-mobile-menu {
-  z-index: 10;
+  z-index: 11;
   position: relative;
   margin-left: auto;
   margin-bottom: 10px;
