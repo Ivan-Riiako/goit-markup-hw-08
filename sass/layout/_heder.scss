@@ -12,45 +12,48 @@ border-bottom: 1px solid var(--nav-line);
     align-items: center;
 }
 
-//  menu
 .menu-container {
-    z-index: 10;
-    @media screen and (max-width: 767px) {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    // top: 100%;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
-
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 48px;
-    padding-top: 48px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    &.is-open {
-     opacity: 1;
-    visibility:visible;
-    pointer-events:painted;
-        display: flex;
-
-        @media screen and (min-width: 480px) {
-            padding-left: 40px;
-            padding-right: 40px;
-        }
+    //   Repela-style mobile-menu 
+    @media screen and (max-width: 768px) {
+        display: none;
     }
-}
+//     z-index: 10;
+//     @media screen and (max-width: 767px) {
+//     display: none;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     position: absolute;
+//     // top: 100%;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100vh;
+//     overflow: auto;
+
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     padding-bottom: 48px;
+//     padding-top: 48px;
+
+//     background: #FFFFFF;
+//     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+
+//     opacity: 0;
+//     visibility: hidden;
+//     pointer-events: none;
+//     // &.is-open {
+//     //  opacity: 1;
+//     // visibility:visible;
+//     // pointer-events:painted;
+//     //     display: flex;
+
+//         @media screen and (min-width: 480px) {
+//             padding-left: 40px;
+//             padding-right: 40px;
+//         }
+//     }
+// }
 @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -59,54 +62,54 @@ border-bottom: 1px solid var(--nav-line);
 }
 
 
-.btn-mobile-menu {
-    z-index: 11;
-    position: relative;
-    margin-left: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    line-height: 0;
+// .btn-mobile-menu {
+//   Repela-style mobile-menu 
+//     z-index: 11;
+//     position: relative;
+//     margin-left: auto;
+//     margin-bottom: 10px;
+//     margin-top: 10px;
+//     line-height: 0;
+
     
-    width: 40px;
-    height: 40px;
+//     width: 40px;
+//     height: 40px;
     
-    background-color: transparent;
-    border: none;
+//     background-color: transparent;
+//     border: none;
 
-    &.is-open &__icon-menu-close{
-        display: block;
-    }
-    & &__icon-menu-close{
-    display: none;
-    }
-    &.is-open &__icon-menu {
-            display: none;
-    }
-    & &__icon-menu {
-        display: block;
-    }
+//     &.is-open &__icon-menu-close{
+//         display: block;
+//     }
+//     & &__icon-menu-close{
+//     display: none;
+//     }
+//     &.is-open &__icon-menu {
+//             display: none;
+//     }
+//     & &__icon-menu {
+//         display: block;
+//     }
 
-    &__icons {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+//     &__icons {
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//     }
 
-    &:hover,
-    &:focus {
-        fill: var(--link-active);
-    }
+//     &:hover,
+//     &:focus {
+//         fill: var(--link-active);
+//     }
 
-    @media screen and (min-width:768px) {
-    display: none;
-       }
-}
+//     @media screen and (min-width:768px) {
+//     display: none;
+//        }
+// }
 
-// AND menu
+
 .navigation__list {
-    outline: rebeccapurple;
-
     @media screen and (min-width: 768px) {
         display: flex;
         margin-left: 93px;
@@ -123,15 +126,10 @@ border-bottom: 1px solid var(--nav-line);
 
 .navigation__element {
     display: block;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-   
-    letter-spacing: 0.02em;
+    //   Repela-style mobile-menu 
+    // @include font-medium(40px, 47px, 0.02em);
 
     padding-bottom: 32px;
-   
-    
     color: var(--nav-color);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -149,9 +147,10 @@ border-bottom: 1px solid var(--nav-line);
 
 // ======== Current ========//
 .navigation__current {
-    color: var(--link-active);
+color: var(--link-active);
 
 @media screen and (min-width: 767px) {
+    color: var(--link-active);
         position: relative;
 
         &::after {
@@ -171,7 +170,8 @@ border-bottom: 1px solid var(--nav-line);
 
 /* --------------CONTACTS --------------*/
 .contacts {
-    margin-top: auto;
+    //   Repela-style mobile-menu 
+    // margin-top: auto;
 @media screen and (min-width: 768px) {
     margin-top:0;
     margin-left: auto;
@@ -186,7 +186,8 @@ align-items: center;
 
 
  &__li {
-     margin-bottom: 32px;
+    //   Repela-style mobile-menu 
+    //  margin-bottom: 32px;
 
      @media screen and (min-width: 768px) {
          margin-bottom: 0;
@@ -195,7 +196,8 @@ align-items: center;
 
 
 &__contact-tell {
-    @include font-medium(34px, 40px, 0.02em);
+    //   Repela-style mobile-menu 
+    // @include font-medium(34px, 40px, 0.02em);
     color: var(--link-active);
 
         @media screen and (min-width: 768px) {
@@ -215,7 +217,8 @@ align-items: center;
 
 
 &__contact-maill{
-    @include font-medium(24px, 28px, 0.02em);
+    //   Repela-style mobile-menu 
+    // @include font-medium(24px, 28px, 0.02em);
     color: var(--contacts-color);
 
     @media screen and (min-width: 768px) {
@@ -243,10 +246,10 @@ align-items: center;
 .contacts__icon-maill,
 .contacts__icon-tell {
     fill: inherit;
-
-    @media screen and (max-width: 767px) {
-    display: none;
-    }
+//   Repela-style mobile-menu 
+    // @media screen and (max-width: 767px) {
+    // display: none;
+    // }
 
     @media screen and (min-width: 768px) {
     margin-right: 8px;
@@ -257,46 +260,49 @@ align-items: center;
     }
 
 }
-// Mobile only
+//  //   Repela-style mobile-menu 
 
 .menu-container__social-links-list{
-    display: flex;
-    flex-wrap: wrap;
-margin-top: auto;
-    align-items: flex-end;
-}
-.menu-container__social-link-item{
-    position: relative;
-    &:not(:last-child){
-      margin-right: 20px;
-    }
+    //   Repela-style mobile-menu   
+     display: none;
+        
+//     display: flex;
+//     flex-wrap: wrap;
+// margin-top: auto;
+//     align-items: flex-end;
+// }
+// .menu-container__social-link-item{
+//     position: relative;
+//     &:not(:last-child){
+//       margin-right: 20px;
+//     }
 
     
-    &:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    height: 100%;
+//     &:not(:last-child)::after {
+//     content: "";
+//     position: absolute;
+//     height: 100%;
 
-    top: 0;
-    right: -10px;
-    display: block;
+//     top: 0;
+//     right: -10px;
+//     display: block;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    // transform: rotate(90deg);
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     // transform: rotate(90deg);
    
-    }
-         @media screen and (min-width: 768px) {
-             display: none;
-         }
-}
-.menu-container__social-link{
-    text-decoration: none;
-    font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        /* identical to box height, or 122% */
+//     }
+//          @media screen and (min-width: 768px) {
+//              display: none;
+//          }
+// }
+// .menu-container__social-link{
+//     text-decoration: none;
+//     font-weight: 500;
+//         font-size: 18px;
+//         line-height: 22px;
+//         /* identical to box height, or 122% */
     
-        letter-spacing: 0.02em;
+//         letter-spacing: 0.02em;
     
-        color: #2196F3;
+//         color: #2196F3;
 }
