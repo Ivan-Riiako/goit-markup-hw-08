@@ -149,7 +149,7 @@ border-bottom: 1px solid var(--nav-line);
 .navigation__current {
 color: var(--link-active);
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     color: var(--link-active);
         position: relative;
 
