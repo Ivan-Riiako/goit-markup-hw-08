@@ -1380,6 +1380,9 @@ a {
   letter-spacing: 0.02em;
   color: var(--contacts-color);
 }
+.mobile-menu-contacts__maill:hover, .mobile-menu-contacts__maill:focus {
+  color: var(--link-active);
+}
 
 .mobile-menu-container__social-links-list {
   display: -webkit-box;
