@@ -4,7 +4,7 @@
     }
 z-index: 10;
 
-position: absolute;
+position: fixed;
 top: 0;
 left: 0;
 width: 100%;
@@ -38,7 +38,12 @@ background: var(--bg-body-color);
 
 // variant 3
 transform: translateY(0);
-
+body.is-open {
+        overflow: hidden;
+        // visibility: hidden;
+        // opacity: 0;
+        // pointer-events: none;
+    }
 
 }
 }
