@@ -712,8 +712,12 @@ a {
     min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content;
-    text-align: start;
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-addres {
+    text-align: start;
   }
 }
 
@@ -766,15 +770,11 @@ a {
           flex-direction: column;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-social {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-social {
     margin-left: 93px;
     margin-right: 93px;
     margin-bottom: 0;
@@ -968,7 +968,7 @@ a {
           transform: translate(-50%, -50%) scale(1);
   width: calc(100vw - 30px);
   max-height: calc(100vh - 30px);
-  padding: 40px;
+  padding: 20px;
   overflow-y: scroll;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -981,6 +981,7 @@ a {
 }
 @media screen and (min-width: 480px) {
   .modal {
+    padding: 40px;
     width: 450px;
   }
 }
@@ -1208,8 +1209,8 @@ a {
 .label-checkbox::before {
   content: "";
   display: block;
-  height: 15px;
-  width: 16px;
+  min-height: 15px;
+  min-width: 16px;
   margin-right: 7px;
   border-radius: 2px;
   border: 2px solid #000000;
@@ -1227,7 +1228,7 @@ a {
 .imput-checkbox:focus + .label-checkbox::before {
   border: 2px solid var(--link-active);
 }
-.label-checkbox > a {
+.label-checkbox__link {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196F3;
@@ -1268,11 +1269,12 @@ a {
 
 .mobile-menu__container {
   position: relative;
-  padding-bottom: 48px;
-  padding-top: 48px;
-  padding-left: 40px;
-  padding-right: 40px;
-  height: calc(100% - 48px);
+  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
+  height: 100%;
+  overflow-y: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1283,6 +1285,14 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu__container {
+    padding-bottom: 48px;
+    padding-top: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .mobile-menu__open-btn {
@@ -1343,14 +1353,23 @@ a {
 
 .mobile-menu-navigation__element {
   display: block;
-  padding-bottom: 32px;
-  color: var(--nav-color);
   font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
+  font-size: 34px;
+  line-height: 38px;
   letter-spacing: 0.02em;
+  padding-bottom: 20px;
+  color: var(--nav-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu-navigation__element {
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+  }
 }
 .mobile-menu-navigation__element:focus, .mobile-menu-navigation__element:hover {
   color: var(--link-active);
@@ -1361,26 +1380,52 @@ a {
 
 .mobile-menu-contacts {
   margin-top: auto;
-  margin-bottom: 64px;
+  margin-bottom: 35px;
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu-contacts {
+    margin-bottom: 64px;
+  }
 }
 .mobile-menu-contacts__item {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu-contacts__item {
+    margin-bottom: 32px;
+  }
 }
 .mobile-menu-contacts__tell {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 30px;
   letter-spacing: 0.02em;
   color: var(--link-active);
 }
+@media screen and (min-width: 480px) {
+  .mobile-menu-contacts__tell {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  }
+}
 .mobile-menu-contacts__maill {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--contacts-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu-contacts__maill {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  }
 }
 .mobile-menu-contacts__maill:hover, .mobile-menu-contacts__maill:focus {
   color: var(--link-active);
@@ -1401,19 +1446,32 @@ a {
   position: relative;
 }
 .mobile-menu__social-link-item:not(:last-child) {
-  margin-right: 10px;
-  padding-right: 10px;
+  margin-right: 5px;
+  padding-right: 5px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu__social-link-item:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 10px;
+  }
 }
 
 .mobile-menu__social-link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  /* identical to box height, or 122% */
+  font-size: 13px;
+  line-height: 16px;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu__social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .social-links-list {
@@ -1492,22 +1550,17 @@ a {
 .logo__studio {
   color: var(--logo-studio);
 }
-.logo:hover .logo__studio, .logo:focus .logo__studio {
-  color: var(--link-active);
-}
 
 .logo--footer {
-  display: inline-block;
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
 }
 
 .logo__studio--inverse {
   color: var(--logo-studio-inverse);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.logo:hover .logo__studio--inverse, .logo:focus .logo__studio--inverse {
-  color: var(--link-active);
 }
 
 /* Section PORTFOLIO --*/
@@ -1630,6 +1683,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+  overflow-y: auto;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 77px;

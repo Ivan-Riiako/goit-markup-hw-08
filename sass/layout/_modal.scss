@@ -6,7 +6,7 @@ transform: translate(-50%, -50%) scale(1);
 width: calc(100vw - 30px);
 max-height: calc(100vh - 30px);
 
-padding: 40px;
+padding: 20px;
 overflow-y: scroll;
 
 background-color: #FFFFFF;
@@ -16,6 +16,7 @@ border-radius: 4px;
 transition: transform 250ms linear;
 
 @media screen and (min-width: 480px) {
+    padding: 40px;
 width: 450px;
 
 }
@@ -151,9 +152,10 @@ width: 528px;
 .label-checkbox {
     display: flex;
     align-items: center;
-
-    @include font-normal(12px, 14px, 0.03em);
+    
+    @include font-normal(12px, 14px, 0.03em); 
     color: #757575;
+
     @media screen and (min-width: 1200px) {
             @include font-normal(14px, 24px, 0.03em);
         }
@@ -161,8 +163,9 @@ width: 528px;
     &::before {
         content: "";
         display: block;
-        height: 15px;
-        width: 16px;
+        
+        min-height: 15px;
+        min-width: 16px;
         margin-right: 7px;
         border-radius: 2px;
         border: 2px solid #000000;
@@ -183,8 +186,8 @@ width: 528px;
     .imput-checkbox:focus + &::before {
         border: 2px solid var(--link-active);
     }
-    &>a {
-        // @include font-normal(14px, 1.5, 0.03em);
+      
+    &__link {
         text-decoration-line: underline;
     
         color: #2196F3;
